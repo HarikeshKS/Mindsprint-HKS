@@ -1,6 +1,5 @@
 package com.mindsprint.project1.activity;
 
-import javax.swing.plaf.IconUIResource;
 import java.util.Scanner;
 
 class Account {
