@@ -9,7 +9,7 @@ public class LargestTwo {
         int num1 = sc.nextInt();
         System.out.println("Enter second number: ");
         int num2 = sc.nextInt();
-        String result = (num1>num2) ? "First number is largest!" : "First number is largest!";
+        String result = (num1 > num2) ? "First number is largest!" : "Second number is largest!";
         System.out.println(result);
     }
 }
