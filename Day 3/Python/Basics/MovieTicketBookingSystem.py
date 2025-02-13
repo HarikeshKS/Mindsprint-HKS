@@ -1,22 +1,13 @@
-# List to store movies (each movie is a dictionary)
 movies = []
-
-# Set to store unique theaters
 theaters = set()
-
-# Tuple for fixed ticket pricing
 ticket_prices = (250, 500, 800)
-
-# Dictionary to store customer bookings (customer name as key, list of booked movies as value)
 customers = {}
 
-# Function to add a new movie
 def add_movie(title, genre, showtime):
     movie = {"title": title, "genre": genre, "showtime": showtime}
     movies.append(movie)
     print(f"Movie '{title}' added successfully.")
 
-# Function to remove a movie
 def remove_movie(title):
     for movie in movies:
         if movie["title"] == title:
@@ -25,7 +16,6 @@ def remove_movie(title):
             return
     print(f"Movie '{title}' not found.")
 
-# Function to add a new theater
 def add_theater(theater_name):
     if theater_name in theaters:
         print(f"Theater '{theater_name}' already exists.")
@@ -33,7 +23,6 @@ def add_theater(theater_name):
         theaters.add(theater_name)
         print(f"Theater '{theater_name}' added successfully.")
 
-# Function to add a new customer
 def add_customer(name):
     if name not in customers:
         customers[name] = []
@@ -41,7 +30,6 @@ def add_customer(name):
     else:
         print(f"Customer '{name}' already exists.")
 
-# Function to book a movie ticket
 def book_ticket(customer_name, movie_title):
     if customer_name not in customers:
         print(f"Customer '{customer_name}' not found. Please add the customer first.")
@@ -55,7 +43,6 @@ def book_ticket(customer_name, movie_title):
 
     print(f"Movie '{movie_title}' not available.")
 
-# Function to print all stored data
 def print_data():
     print("\nMovies Available:")
     for movie in movies:
@@ -72,17 +59,16 @@ def print_data():
     for customer, bookings in customers.items():
         print(f"  - {customer}: {', '.join(bookings) if bookings else 'No bookings yet'}")
 
-# Example usage
-add_movie("Inception", "Sci-Fi", "7:00 PM")
-add_movie("The Dark Knight", "Action", "9:00 PM")
+add_movie("Interstellar", "Sci-Fi", "7:00 PM")
+add_movie("Mission Impossible II", "Action", "9:00 PM")
 
 add_theater("PVR Cinemas")
 add_theater("INOX")
 
-add_customer("Alice")
-add_customer("Bob")
+add_customer("Harikesh")
+add_customer("Charanjeet")
 
-book_ticket("Alice", "Inception")
-book_ticket("Bob", "The Dark Knight")
+book_ticket("Harikesh", "Interstellar")
+book_ticket("Charanjeet", "Mission Impossible II")
 
 print_data()
