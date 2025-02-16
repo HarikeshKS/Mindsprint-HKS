@@ -205,3 +205,33 @@ NumPy is a powerful Python library used for numerical computing. It provides sup
 - Transactional Data
 - Web Scraping
 - Sensor Data
+
+# Data Cleaning
+- Handling missing values
+- Removing duplicates
+- Data type conversions
+- Outlier detection and treatment
+
+
+# Outliers  
+An **outlier** is a data point that significantly differs from other observations in a dataset. Outliers can be much higher or lower than the majority of the data points and can arise due to various reasons such as measurement errors, data entry errors, or genuine variability in the data¹(https://www.scribbr.com/statistics/outliers/)²(https://www.freecodecamp.org/news/what-is-an-outlier-definition-and-how-to-find-outliers-in-statistics/).
+
+### Identifying Outliers
+There are several methods to identify outliers:
+1. **Sorting Method**: Simply sorting the data and visually inspecting for extreme values.
+2. **Data Visualization**: Using plots like box plots or scatter plots to visually identify outliers.
+3. **Statistical Tests**: Calculating z-scores to find data points that are several standard deviations away from the mean.
+4. **Interquartile Range (IQR) Method**: Identifying outliers as values that fall below \( Q1 - 1.5 \times IQR \) or above \( Q3 + 1.5 \times IQR \) where \( Q1 \) and \( Q3 \) are the first and third quartiles, respectively¹(https://www.scribbr.com/statistics/outliers/)²(https://www.freecodecamp.org/news/what-is-an-outlier-definition-and-how-to-find-outliers-in-statistics/).
+
+### Handling Outliers
+- **True Outliers**: These represent natural variations and should be retained in the dataset.
+- **Erroneous Outliers**: These result from errors and should be corrected or removed to avoid skewing the analysis¹(https://www.scribbr.com/statistics/outliers/).
+
+Outliers can provide valuable insights but can also distort statistical analyses if not handled appropriately. If you need more detailed information or examples, feel free to ask!
+
+¹(https://www.scribbr.com/statistics/outliers/): [Scribbr - How to Find Outliers](https://www.scribbr.com/statistics/outliers/)
+²(https://www.freecodecamp.org/news/what-is-an-outlier-definition-and-how-to-find-outliers-in-statistics/): [FreeCodeCamp - What is an Outlier?](https://www.freecodecamp.org/news/what-is-an-outlier-definition-and-how-to-find-outliers-in-statistics/)
+
+Source: Conversation with Copilot, 14/2/2025
+(1) How to Find Outliers | 4 Ways with Examples & Explanation - Scribbr. https://www.scribbr.com/statistics/outliers/.
+(2) What is an Outlier? Definition and How to Find Outliers in Statistics. https://www.freecodecamp.org/news/what-is-an-outlier-definition-and-how-to-find-outliers-in-statistics/.
