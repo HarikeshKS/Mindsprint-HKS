@@ -39,3 +39,11 @@ function findDuplicates(arr) {
 }
 const array = [1, 2, 3, 4, 2, 3, 5];
 console.log(`Duplicates: ${findDuplicates(array)}`);
+
+// STRINGS METHODS ACTIVITY
+// 1. Create an array of Strings which contains the values like [“Mind”,”SpRInT”,”Pvt”,”Ltd”] then replace the array values with corresponding Uppercase values only.
+// [“MIND”,”SPRINT”,”PVT”,”LTD”]
+
+let strings = ["Mind", "SpRInT", "Pvt", "Ltd"];
+let upperCaseStrings = strings.map((str) => str.toUpperCase());
+console.log(upperCaseStrings);
