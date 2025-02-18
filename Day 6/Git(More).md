@@ -413,3 +413,45 @@ Rebasing is another way to integrate changes from one branch into another. It re
 - **Branches**: Allow parallel development and keep the main codebase stable.
 - **Merging**: Integrates changes from one branch into another.
 - **Rebasing**: Re-applies commits on top of another base commit.
+
+
+# GIT TAGS
+Git tags are a useful feature for marking specific points in your repository's history. They are often used to mark release points (e.g., v1.0, v2.0). There are two main types of tags in Git: **lightweight tags** and **annotated tags**.
+
+### Lightweight Tags
+- **Lightweight tags** are like simple pointers to a specific commit. They don't store any additional information beyond the commit ID.
+- To create a lightweight tag, you can use:
+  ```bash
+  git tag <tagname>
+  ```
+
+### Annotated Tags
+- **Annotated tags** store additional metadata such as the tagger's name, email, date, and a message. They can also be signed and verified with GPG.
+- To create an annotated tag, you can use:
+  ```bash
+  git tag -a <tagname> -m "message"
+  ```
+
+### Listing Tags
+- To list all tags in your repository, you can use:
+  ```bash
+  git tag
+  ```
+
+### Deleting Tags
+- To delete a tag locally, you can use:
+  ```bash
+  git tag -d <tagname>
+  ```
+- To delete a tag from a remote repository, you can use:
+  ```bash
+  git push origin --delete <tagname>
+  ```
+
+### Viewing Tag Information
+- To view information about a specific tag, you can use:
+  ```bash
+  git show <tagname>
+  ```
+
+Tags are a great way to keep track of important milestones in your project's history.
