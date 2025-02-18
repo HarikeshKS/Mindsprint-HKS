@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate Average</title>
+    </head>
+    <body>
+        <h2>Enter numbers separated by commas:</h2>
+        <input type="text" id="numbersInput" placeholder="e.g., 10,20,30" />
+        <button onclick="calculateAndDisplayAverage()">
+            Calculate Average
+        </button>
+        <p id="result"></p>
+
+        <script>
+            function calculateAverage(numbers) {
+                let sum = 0;
+                for (let num of numbers) {
+                    sum += num;
+                }
+                return sum / numbers.length;
+            }
+
+            function calculateAndDisplayAverage() {
+                const input = document.getElementById("numbersInput").value;
+                const numbers = input.split(",").map(Number);
+                const average = calculateAverage(numbers);
+                document.getElementById(
+                    "result"
+                ).innerText = `Average: ${average}`;
+            }
+        </script>
+    </body>
+</html>
