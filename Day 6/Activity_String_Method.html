@@ -1,0 +1,40 @@
+<!-- 
+ 
+// STRINGS METHODS ACTIVITY
+// 2. Write a JS program which takes input from the user in string and print all values and its length as well.
+// •Sonam: 5
+// •Alex : 4
+// •Catherine: 9
+ 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Lengths</title>
+    </head>
+    <body>
+        <h2>Enter names separated by commas:</h2>
+        <input
+            type="text"
+            id="namesInput"
+            placeholder="e.g., Sonam, Harikesh, Saumya"
+        />
+        <button onclick="displayNamesAndLengths()">Submit</button>
+        <ul id="result"></ul>
+
+        <script>
+            function displayNamesAndLengths() {
+                const input = document.getElementById("namesInput").value;
+                const names = input.split(",").map((name) => name.trim());
+                const resultList = document.getElementById("result");
+                resultList.innerHTML = "";
+
+                names.forEach((name) => {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = `${name}: ${name.length}`;
+                    resultList.appendChild(listItem);
+                });
+            }
+        </script>
+    </body>
+</html>
