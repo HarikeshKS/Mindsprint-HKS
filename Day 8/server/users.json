@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Harikesh",
+      "email": "Harikesh454@gmail.com",
+      "address": "UP"
+    },
+    {
+      "id": "2",
+      "name": "Saumya",
+      "email": "Saumya77@gmail.com",
+      "address": "UP"
+    },
+    {
+      "name": "Charanjeet",
+      "email": "Charanjeet@gmail.com",
+      "address": "PB",
+      "id": "3",
+      "website": "bigbro.com"
+    }
+  ]
+}
