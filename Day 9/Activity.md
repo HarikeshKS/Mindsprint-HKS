@@ -25,7 +25,7 @@ Verified the Docker image to ensure it was built correctly and is functioning as
 Built the Docker image from the Dockerfile.
 
 ## Screenshot of the Website
-
+![Screenshot_20250221-172712.png](https://github.com/user-attachments/assets/44218b4b-4fe5-404a-a42c-5c4ea77d1b6d)
 Screenshot of the website served by the Docker container. (Mobile View)
 
 # Instance Termination
