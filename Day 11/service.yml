@@ -1,0 +1,23 @@
+# Defines the API version for the Service object
+apiVersion: v1
+
+# Specifies the kind of Kubernetes object, in this case, a Service
+kind: Service
+
+metadata:
+    # The name of the Service
+    name: my-service
+
+spec:
+    # The type of Service, which determines how the Service is exposed
+    type: NodePort
+
+    # The selector used to identify the Pods that this Service targets
+    selector:
+        app: nginx
+
+    ports:
+        - protocol: TCP # The protocol used by the Service
+          port: 80 # The port that the Service will expose
+          targetPort: 80 # The port on the Pod that the Service should forward traffic to
+          nodePort: 30007 # The port on each Node that the Service will be exposed on
