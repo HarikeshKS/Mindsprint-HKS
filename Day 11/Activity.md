@@ -27,7 +27,7 @@ Creating an automatic backup of specific files using a shell script and Task Sch
     - Open a terminal and navigate to the directory containing `backup.sh`.
     - Execute the script by running:
       ```sh
-      bash backup.sh
+      sh activiy1.sh
       ```
     ![Screenshot (47)](https://github.com/user-attachments/assets/666c01b2-c425-4437-972d-7b74a5b1258b)
 
