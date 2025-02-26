@@ -1,6 +1,5 @@
 package com.mindsprint.project.dao;
 import com.mindsprint.project.models.Customer;
-import sun.jvm.hotspot.debugger.win32.coff.COFFException;
 
 import java.util.ArrayList;
 import java.util.List;
